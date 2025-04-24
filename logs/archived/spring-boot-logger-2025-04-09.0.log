@@ -1,0 +1,807 @@
+2025-04-09 20:49:25,505 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using SLF4J as the default logging framework
+2025-04-09 20:49:25,512 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2025-04-09 20:49:25,512 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 21
+2025-04-09 20:49:25,515 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2025-04-09 20:49:25,516 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe base methods: all available
+2025-04-09 20:49:25,517 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2025-04-09 20:49:25,519 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2025-04-09 20:49:25,520 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:332)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:325)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:334)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:90)
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:34)
+	at io.netty.util.AttributeKey$1.<init>(AttributeKey.java:27)
+	at io.netty.util.AttributeKey.<clinit>(AttributeKey.java:27)
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.<clinit>(ReactorClientHttpConnector.java:60)
+	at org.springframework.web.reactive.function.client.DefaultWebClientBuilder.initConnector(DefaultWebClientBuilder.java:335)
+	at org.springframework.web.reactive.function.client.DefaultWebClientBuilder.build(DefaultWebClientBuilder.java:311)
+	at com.example.webclient.WebClientTest.test1(WebClientTest.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-04-09 20:49:25,524 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2025-04-09 20:49:25,526 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4460c2fd
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:714)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:571)
+	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:468)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:459)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:334)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:90)
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:34)
+	at io.netty.util.AttributeKey$1.<init>(AttributeKey.java:27)
+	at io.netty.util.AttributeKey.<clinit>(AttributeKey.java:27)
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.<clinit>(ReactorClientHttpConnector.java:60)
+	at org.springframework.web.reactive.function.client.DefaultWebClientBuilder.initConnector(DefaultWebClientBuilder.java:335)
+	at org.springframework.web.reactive.function.client.DefaultWebClientBuilder.build(DefaultWebClientBuilder.java:311)
+	at com.example.webclient.WebClientTest.test1(WebClientTest.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-04-09 20:49:25,529 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2025-04-09 20:49:25,529 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2025-04-09 20:49:25,530 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\RENDSZ~1\AppData\Local\Temp (java.io.tmpdir)
+2025-04-09 20:49:25,531 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2025-04-09 20:49:25,531 DEBUG i.n.u.i.PlatformDependent [main] Platform: Windows
+2025-04-09 20:49:25,533 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2025-04-09 20:49:25,533 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2025-04-09 20:49:25,535 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2025-04-09 20:49:25,535 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2025-04-09 20:49:25,549 DEBUG r.u.Loggers$Slf4JLogger [main] Using Slf4j logging framework
+2025-04-09 20:49:25,585 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2025-04-09 20:49:25,585 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2025-04-09 20:49:25,610 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2025-04-09 20:49:25,611 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2025-04-09 20:49:25,627 DEBUG i.n.h.c.c.Brotli [main] brotli4j not in the classpath; Brotli support will be unavailable.
+2025-04-09 20:49:25,969 TRACE o.s.w.u.RfcUriParser$InternalParser [main] START -> SCHEME_OR_PATH, index=0, componentIndex=0
+2025-04-09 20:49:25,970 TRACE o.s.w.u.RfcUriParser$InternalParser [main] scheme set to 'http'
+2025-04-09 20:49:25,970 TRACE o.s.w.u.RfcUriParser$InternalParser [main] SCHEME_OR_PATH -> START, index=4, componentIndex=0
+2025-04-09 20:49:25,970 TRACE o.s.w.u.RfcUriParser$InternalParser [main] START -> HOST_OR_PATH, index=5, componentIndex=5
+2025-04-09 20:49:25,970 TRACE o.s.w.u.RfcUriParser$InternalParser [main] host set to ''
+2025-04-09 20:49:25,970 TRACE o.s.w.u.RfcUriParser$InternalParser [main] HOST_OR_PATH -> HOST, index=6, componentIndex=7
+2025-04-09 20:49:25,973 TRACE o.s.w.u.RfcUriParser$InternalParser [main] host set to 'localhost'
+2025-04-09 20:49:25,974 TRACE o.s.w.u.RfcUriParser$InternalParser [main] HOST -> PORT, index=16, componentIndex=17
+2025-04-09 20:49:25,974 TRACE o.s.w.u.RfcUriParser$InternalParser [main] port set to '8089'
+2025-04-09 20:49:25,974 TRACE o.s.w.u.RfcUriParser$InternalParser [main] PORT -> PATH, index=21, componentIndex=21
+2025-04-09 20:49:25,974 TRACE o.s.w.u.RfcUriParser$InternalParser [main] path set to '/tours/1/ratings'
+2025-04-09 20:49:26,061 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv4Stack: false
+2025-04-09 20:49:26,061 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv6Addresses: false
+2025-04-09 20:49:26,065 DEBUG i.n.u.NetUtilInitializations [main] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+2025-04-09 20:49:26,066 DEBUG i.n.u.NetUtil$SoMaxConnAction [main] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2025-04-09 20:49:26,080 TRACE o.s.c.l.LogFormatUtils [main] [1869f114] HTTP GET http://localhost:8089/tours/1/ratings, headers={}
+2025-04-09 20:49:26,089 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=16, workerCount=16}
+2025-04-09 20:49:26,089 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default ConnectionProvider: reactor.netty.resources.DefaultPooledConnectionProvider@69c93ca4
+2025-04-09 20:49:26,091 DEBUG r.u.Loggers$Slf4JLogger [main] Default io_uring support : false
+2025-04-09 20:49:26,168 DEBUG r.u.Loggers$Slf4JLogger [main] Default Epoll support : false
+2025-04-09 20:49:26,168 DEBUG r.u.Loggers$Slf4JLogger [main] Default KQueue support : false
+2025-04-09 20:49:26,172 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 32
+2025-04-09 20:49:26,183 DEBUG i.n.u.c.GlobalEventExecutor [main] -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2025-04-09 20:49:26,195 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2025-04-09 20:49:26,196 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2025-04-09 20:49:26,205 DEBUG i.n.u.i.PlatformDependent$Mpsc [main] org.jctools-core.MpscChunkedArrayQueue: available
+2025-04-09 20:49:26,210 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4c4f4365
+2025-04-09 20:49:26,213 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3c904f1e
+2025-04-09 20:49:26,216 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4eb30d44
+2025-04-09 20:49:26,218 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@d56aaa6
+2025-04-09 20:49:26,220 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6972c30a
+2025-04-09 20:49:26,224 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@57a48985
+2025-04-09 20:49:26,226 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1ab6718
+2025-04-09 20:49:26,229 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3910fe11
+2025-04-09 20:49:26,231 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@460510aa
+2025-04-09 20:49:26,234 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@351e414e
+2025-04-09 20:49:26,236 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6fd77352
+2025-04-09 20:49:26,239 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5109e8cf
+2025-04-09 20:49:26,241 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3f672204
+2025-04-09 20:49:26,244 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@78b41097
+2025-04-09 20:49:26,246 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2c2db130
+2025-04-09 20:49:26,248 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@327c7bea
+2025-04-09 20:49:26,267 DEBUG i.n.r.d.DnsNameResolver [main] Default ResolvedAddressTypes: IPV4_PREFERRED
+2025-04-09 20:49:26,268 DEBUG i.n.r.d.DnsNameResolver [main] Localhost address: localhost/127.0.0.1
+2025-04-09 20:49:26,277 DEBUG i.n.r.d.DnsNameResolver [main] Windows hostname: CHWS560922458
+2025-04-09 20:49:26,277 DEBUG i.n.r.d.DnsNameResolver [main] Default search domains: []
+2025-04-09 20:49:26,280 DEBUG i.n.r.d.DnsNameResolver [main] Default UnixResolverOptions{ndots=1, timeout=5, attempts=16}
+2025-04-09 20:49:26,286 DEBUG i.n.r.DefaultHostsFileEntriesResolver [main] -Dio.netty.hostsFileRefreshInterval: 0
+2025-04-09 20:49:26,306 DEBUG i.n.r.d.DefaultDnsServerAddressStreamProvider [main] Default DNS servers: [/[2a02:ab88:378f:5d00:be5b:d5ff:febd:8494]:53, /192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2025-04-09 20:49:26,316 DEBUG r.u.Loggers$Slf4JLogger [main] Creating a new [http] client pool [PoolFactory{evictionInterval=PT0S, leasingStrategy=fifo, maxConnections=500, maxIdleTime=-1, maxLifeTime=-1, metricsEnabled=false, pendingAcquireMaxCount=1000, pendingAcquireTimeout=45000}] for [localhost/<unresolved>:8089]
+2025-04-09 20:49:26,348 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.processId: 24292 (auto-detected)
+2025-04-09 20:49:26,350 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.machineId: 88:ae:dd:ff:fe:1a:25:7a (auto-detected)
+2025-04-09 20:49:26,370 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 32
+2025-04-09 20:49:26,370 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 32
+2025-04-09 20:49:26,371 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2025-04-09 20:49:26,371 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2025-04-09 20:49:26,371 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2025-04-09 20:49:26,372 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2025-04-09 20:49:26,372 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2025-04-09 20:49:26,373 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2025-04-09 20:49:26,373 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2025-04-09 20:49:26,374 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2025-04-09 20:49:26,374 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2025-04-09 20:49:26,375 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2025-04-09 20:49:26,375 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.disableCacheFinalizersForFastThreadLocalThreads: false
+2025-04-09 20:49:26,387 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2025-04-09 20:49:26,387 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2025-04-09 20:49:26,388 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2025-04-09 20:49:26,410 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6] Created a new pooled channel, now: 0 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 20:49:26,436 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkAccessible: true
+2025-04-09 20:49:26,436 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkBounds: true
+2025-04-09 20:49:26,437 DEBUG i.n.u.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [reactor-http-nio-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@15419897
+2025-04-09 20:49:26,447 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-04-09 20:49:26,449 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] resolveCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:49:26,449 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] cnameCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:49:26,449 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] authoritativeDnsServerCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:49:26,465 DEBUG i.n.b.ChannelInitializerExtensions [reactor-http-nio-2] -Dio.netty.bootstrap.extensions: null
+2025-04-09 20:49:26,487 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6] Connecting to [localhost/127.0.0.1:8089].
+2025-04-09 20:49:26,494 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Registering pool release on close event for channel
+2025-04-09 20:49:26,495 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Channel connected, now: 1 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 20:49:26,496 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] onStateChange(PooledConnection{channel=[id: 0xf83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089]}, [connected])
+2025-04-09 20:49:26,506 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xf83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089]}}, [configured])
+2025-04-09 20:49:26,508 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Handler is being applied: {uri=http://localhost:8089/tours/1/ratings, method=GET}
+2025-04-09 20:49:26,509 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0xf83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089]}}, [request_prepared])
+2025-04-09 20:49:26,516 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] No sendHeaders() called before complete, sending zero-length header
+2025-04-09 20:49:26,523 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2025-04-09 20:49:26,523 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.ratio: 8
+2025-04-09 20:49:26,523 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.chunkSize: 32
+2025-04-09 20:49:26,523 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.blocking: false
+2025-04-09 20:49:26,523 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2025-04-09 20:49:26,534 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0xf83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089]}}, [request_sent])
+2025-04-09 20:49:26,543 DEBUG i.n.h.c.c.Zstd [reactor-http-nio-2] zstd-jni not in the classpath; Zstd support will be unavailable.
+2025-04-09 20:49:26,547 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Content-Type: <filtered>
+Transfer-Encoding: <filtered>
+Date: <filtered>
+2025-04-09 20:49:26,548 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0xf83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089]}}, [response_received])
+2025-04-09 20:49:26,557 TRACE o.s.c.l.LogFormatUtils [reactor-http-nio-2] [1869f114] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Response 200 OK, headers={masked}
+2025-04-09 20:49:26,566 DEBUG c.e.w.WebClientTest [reactor-http-nio-2] Response: 
+Status: 200 OK
+Headers:
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Date: Wed, 09 Apr 2025 18:49:26 GMT
+
+2025-04-09 20:49:26,567 DEBUG c.e.w.WebClientTest [reactor-http-nio-2] Response: 
+Status: 200 OK
+Headers:
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Date: Wed, 09 Apr 2025 18:49:26 GMT
+
+2025-04-09 20:49:26,589 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] [terminated=false, cancelled=false, pending=0, error=null]: subscribing inbound receiver
+2025-04-09 20:49:26,597 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Received last HTTP packet
+2025-04-09 20:49:26,598 TRACE r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Disposing ChannelOperation from a channel
+java.lang.Exception: ChannelOperation terminal stack
+	at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:501)
+	at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:824)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:796)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-04-09 20:49:26,643 TRACE o.s.c.l.CompositeLog [reactor-http-nio-2] [1869f114] [f83386e6-1, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Decoded [{"content":[],"pageable":{"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"pageSize":20,"pageNumber":0,"paged":true,"unpaged":false},"last":true,"totalElements":0,"totalPages":0,"first":true,"size":20,"number":0,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":0,"empty":true}]
+2025-04-09 20:49:26,644 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0xf83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089]}}, [response_completed])
+2025-04-09 20:49:26,644 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0xf83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089]}}, [disconnecting])
+2025-04-09 20:49:26,646 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Releasing channel
+2025-04-09 20:49:26,649 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [f83386e6, L:/127.0.0.1:53954 - R:localhost/127.0.0.1:8089] Channel cleaned, now: 0 active connections, 1 inactive connections 0 pending acquire requests.
+2025-04-09 20:51:24,851 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using SLF4J as the default logging framework
+2025-04-09 20:51:24,857 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2025-04-09 20:51:24,858 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 21
+2025-04-09 20:51:24,861 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2025-04-09 20:51:24,862 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe base methods: all available
+2025-04-09 20:51:24,864 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2025-04-09 20:51:24,866 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2025-04-09 20:51:24,867 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2025-04-09 20:51:24,868 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2025-04-09 20:51:24,870 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6059513
+2025-04-09 20:51:24,872 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2025-04-09 20:51:24,872 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2025-04-09 20:51:24,873 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\RENDSZ~1\AppData\Local\Temp (java.io.tmpdir)
+2025-04-09 20:51:24,873 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2025-04-09 20:51:24,874 DEBUG i.n.u.i.PlatformDependent [main] Platform: Windows
+2025-04-09 20:51:24,876 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2025-04-09 20:51:24,877 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2025-04-09 20:51:24,878 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2025-04-09 20:51:24,879 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2025-04-09 20:51:24,892 DEBUG r.u.Loggers$Slf4JLogger [main] Using Slf4j logging framework
+2025-04-09 20:51:24,928 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2025-04-09 20:51:24,929 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2025-04-09 20:51:24,956 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2025-04-09 20:51:24,956 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2025-04-09 20:51:24,972 DEBUG i.n.h.c.c.Brotli [main] brotli4j not in the classpath; Brotli support will be unavailable.
+2025-04-09 20:51:25,341 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv4Stack: false
+2025-04-09 20:51:25,341 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv6Addresses: false
+2025-04-09 20:51:25,345 DEBUG i.n.u.NetUtilInitializations [main] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+2025-04-09 20:51:25,346 DEBUG i.n.u.NetUtil$SoMaxConnAction [main] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2025-04-09 20:51:25,360 DEBUG o.s.c.l.LogFormatUtils [main] [264c5d07] HTTP GET http://localhost:8089/tours/1/ratings
+2025-04-09 20:51:25,370 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=16, workerCount=16}
+2025-04-09 20:51:25,370 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default ConnectionProvider: reactor.netty.resources.DefaultPooledConnectionProvider@64138b0c
+2025-04-09 20:51:25,372 DEBUG r.u.Loggers$Slf4JLogger [main] Default io_uring support : false
+2025-04-09 20:51:25,450 DEBUG r.u.Loggers$Slf4JLogger [main] Default Epoll support : false
+2025-04-09 20:51:25,451 DEBUG r.u.Loggers$Slf4JLogger [main] Default KQueue support : false
+2025-04-09 20:51:25,455 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 32
+2025-04-09 20:51:25,465 DEBUG i.n.u.c.GlobalEventExecutor [main] -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2025-04-09 20:51:25,474 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2025-04-09 20:51:25,474 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2025-04-09 20:51:25,480 DEBUG i.n.u.i.PlatformDependent$Mpsc [main] org.jctools-core.MpscChunkedArrayQueue: available
+2025-04-09 20:51:25,517 DEBUG i.n.r.d.DnsNameResolver [main] Default ResolvedAddressTypes: IPV4_PREFERRED
+2025-04-09 20:51:25,517 DEBUG i.n.r.d.DnsNameResolver [main] Localhost address: localhost/127.0.0.1
+2025-04-09 20:51:25,524 DEBUG i.n.r.d.DnsNameResolver [main] Windows hostname: CHWS560922458
+2025-04-09 20:51:25,525 DEBUG i.n.r.d.DnsNameResolver [main] Default search domains: []
+2025-04-09 20:51:25,527 DEBUG i.n.r.d.DnsNameResolver [main] Default UnixResolverOptions{ndots=1, timeout=5, attempts=16}
+2025-04-09 20:51:25,534 DEBUG i.n.r.DefaultHostsFileEntriesResolver [main] -Dio.netty.hostsFileRefreshInterval: 0
+2025-04-09 20:51:25,557 DEBUG i.n.r.d.DefaultDnsServerAddressStreamProvider [main] Default DNS servers: [/[2a02:ab88:378f:5d00:be5b:d5ff:febd:8494]:53, /192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2025-04-09 20:51:25,566 DEBUG r.u.Loggers$Slf4JLogger [main] Creating a new [http] client pool [PoolFactory{evictionInterval=PT0S, leasingStrategy=fifo, maxConnections=500, maxIdleTime=-1, maxLifeTime=-1, metricsEnabled=false, pendingAcquireMaxCount=1000, pendingAcquireTimeout=45000}] for [localhost/<unresolved>:8089]
+2025-04-09 20:51:25,598 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.processId: 28108 (auto-detected)
+2025-04-09 20:51:25,600 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.machineId: 88:ae:dd:ff:fe:1a:25:7a (auto-detected)
+2025-04-09 20:51:25,621 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 32
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 32
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2025-04-09 20:51:25,622 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2025-04-09 20:51:25,623 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2025-04-09 20:51:25,623 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2025-04-09 20:51:25,624 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.disableCacheFinalizersForFastThreadLocalThreads: false
+2025-04-09 20:51:25,633 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2025-04-09 20:51:25,634 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2025-04-09 20:51:25,635 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2025-04-09 20:51:25,650 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc] Created a new pooled channel, now: 0 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 20:51:25,669 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkAccessible: true
+2025-04-09 20:51:25,670 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkBounds: true
+2025-04-09 20:51:25,671 DEBUG i.n.u.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [reactor-http-nio-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2eab30ac
+2025-04-09 20:51:25,678 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-04-09 20:51:25,679 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] resolveCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:51:25,680 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] cnameCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:51:25,680 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] authoritativeDnsServerCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:51:25,692 DEBUG i.n.b.ChannelInitializerExtensions [reactor-http-nio-2] -Dio.netty.bootstrap.extensions: null
+2025-04-09 20:51:25,713 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc] Connecting to [localhost/127.0.0.1:8089].
+2025-04-09 20:51:25,720 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Registering pool release on close event for channel
+2025-04-09 20:51:25,721 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Channel connected, now: 1 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 20:51:25,722 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] onStateChange(PooledConnection{channel=[id: 0x2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089]}, [connected])
+2025-04-09 20:51:25,734 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089]}}, [configured])
+2025-04-09 20:51:25,735 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Handler is being applied: {uri=http://localhost:8089/tours/1/ratings, method=GET}
+2025-04-09 20:51:25,736 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089]}}, [request_prepared])
+2025-04-09 20:51:25,739 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] No sendHeaders() called before complete, sending zero-length header
+2025-04-09 20:51:25,744 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2025-04-09 20:51:25,744 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.ratio: 8
+2025-04-09 20:51:25,744 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.chunkSize: 32
+2025-04-09 20:51:25,745 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.blocking: false
+2025-04-09 20:51:25,745 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2025-04-09 20:51:25,755 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089]}}, [request_sent])
+2025-04-09 20:51:25,765 DEBUG i.n.h.c.c.Zstd [reactor-http-nio-2] zstd-jni not in the classpath; Zstd support will be unavailable.
+2025-04-09 20:51:25,770 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Content-Type: <filtered>
+Transfer-Encoding: <filtered>
+Date: <filtered>
+2025-04-09 20:51:25,770 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089]}}, [response_received])
+2025-04-09 20:51:25,780 DEBUG o.s.c.l.LogFormatUtils [reactor-http-nio-2] [264c5d07] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Response 200 OK
+2025-04-09 20:51:25,785 DEBUG c.e.w.WebClientTest [reactor-http-nio-2] Response: 
+Status: 200 OK
+Headers:
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Date: Wed, 09 Apr 2025 18:51:25 GMT
+
+2025-04-09 20:51:25,786 DEBUG c.e.w.WebClientTest [reactor-http-nio-2] Response: 
+Status: 200 OK
+Headers:
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Date: Wed, 09 Apr 2025 18:51:25 GMT
+
+2025-04-09 20:51:25,811 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] [terminated=false, cancelled=false, pending=0, error=null]: subscribing inbound receiver
+2025-04-09 20:51:25,818 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Received last HTTP packet
+2025-04-09 20:51:25,860 DEBUG o.s.c.l.CompositeLog [reactor-http-nio-2] [264c5d07] [2bf774fc-1, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Decoded [{"content":[],"pageable":{"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"pageSize" (truncated)...]
+2025-04-09 20:51:25,860 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089]}}, [response_completed])
+2025-04-09 20:51:25,861 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089]}}, [disconnecting])
+2025-04-09 20:51:25,861 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Releasing channel
+2025-04-09 20:51:25,863 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [2bf774fc, L:/127.0.0.1:53968 - R:localhost/127.0.0.1:8089] Channel cleaned, now: 0 active connections, 1 inactive connections 0 pending acquire requests.
+2025-04-09 20:54:40,294 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using SLF4J as the default logging framework
+2025-04-09 20:54:40,303 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2025-04-09 20:54:40,304 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 21
+2025-04-09 20:54:40,308 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2025-04-09 20:54:40,310 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe base methods: all available
+2025-04-09 20:54:40,312 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2025-04-09 20:54:40,313 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2025-04-09 20:54:40,314 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2025-04-09 20:54:40,315 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2025-04-09 20:54:40,317 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @76a303cb
+2025-04-09 20:54:40,318 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2025-04-09 20:54:40,319 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2025-04-09 20:54:40,319 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\RENDSZ~1\AppData\Local\Temp (java.io.tmpdir)
+2025-04-09 20:54:40,319 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2025-04-09 20:54:40,320 DEBUG i.n.u.i.PlatformDependent [main] Platform: Windows
+2025-04-09 20:54:40,322 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2025-04-09 20:54:40,322 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2025-04-09 20:54:40,323 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2025-04-09 20:54:40,324 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2025-04-09 20:54:40,339 DEBUG r.u.Loggers$Slf4JLogger [main] Using Slf4j logging framework
+2025-04-09 20:54:40,373 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2025-04-09 20:54:40,374 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2025-04-09 20:54:40,399 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2025-04-09 20:54:40,399 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2025-04-09 20:54:40,415 DEBUG i.n.h.c.c.Brotli [main] brotli4j not in the classpath; Brotli support will be unavailable.
+2025-04-09 20:54:40,810 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv4Stack: false
+2025-04-09 20:54:40,811 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv6Addresses: false
+2025-04-09 20:54:40,815 DEBUG i.n.u.NetUtilInitializations [main] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+2025-04-09 20:54:40,816 DEBUG i.n.u.NetUtil$SoMaxConnAction [main] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2025-04-09 20:54:40,830 DEBUG o.s.c.l.LogFormatUtils [main] [847f3e7] HTTP GET http://localhost:8089/tours/1/ratings
+2025-04-09 20:54:40,841 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=16, workerCount=16}
+2025-04-09 20:54:40,842 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default ConnectionProvider: reactor.netty.resources.DefaultPooledConnectionProvider@49dbaaf3
+2025-04-09 20:54:40,843 DEBUG r.u.Loggers$Slf4JLogger [main] Default io_uring support : false
+2025-04-09 20:54:40,920 DEBUG r.u.Loggers$Slf4JLogger [main] Default Epoll support : false
+2025-04-09 20:54:40,922 DEBUG r.u.Loggers$Slf4JLogger [main] Default KQueue support : false
+2025-04-09 20:54:40,926 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 32
+2025-04-09 20:54:40,934 DEBUG i.n.u.c.GlobalEventExecutor [main] -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2025-04-09 20:54:40,945 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2025-04-09 20:54:40,945 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2025-04-09 20:54:40,951 DEBUG i.n.u.i.PlatformDependent$Mpsc [main] org.jctools-core.MpscChunkedArrayQueue: available
+2025-04-09 20:54:40,990 DEBUG i.n.r.d.DnsNameResolver [main] Default ResolvedAddressTypes: IPV4_PREFERRED
+2025-04-09 20:54:40,990 DEBUG i.n.r.d.DnsNameResolver [main] Localhost address: localhost/127.0.0.1
+2025-04-09 20:54:40,998 DEBUG i.n.r.d.DnsNameResolver [main] Windows hostname: CHWS560922458
+2025-04-09 20:54:40,998 DEBUG i.n.r.d.DnsNameResolver [main] Default search domains: []
+2025-04-09 20:54:41,000 DEBUG i.n.r.d.DnsNameResolver [main] Default UnixResolverOptions{ndots=1, timeout=5, attempts=16}
+2025-04-09 20:54:41,006 DEBUG i.n.r.DefaultHostsFileEntriesResolver [main] -Dio.netty.hostsFileRefreshInterval: 0
+2025-04-09 20:54:41,030 DEBUG i.n.r.d.DefaultDnsServerAddressStreamProvider [main] Default DNS servers: [/[2a02:ab88:378f:5d00:be5b:d5ff:febd:8494]:53, /192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2025-04-09 20:54:41,043 DEBUG r.u.Loggers$Slf4JLogger [main] Creating a new [http] client pool [PoolFactory{evictionInterval=PT0S, leasingStrategy=fifo, maxConnections=500, maxIdleTime=-1, maxLifeTime=-1, metricsEnabled=false, pendingAcquireMaxCount=1000, pendingAcquireTimeout=45000}] for [localhost/<unresolved>:8089]
+2025-04-09 20:54:41,087 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.processId: 13612 (auto-detected)
+2025-04-09 20:54:41,090 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.machineId: 88:ae:dd:ff:fe:1a:25:7a (auto-detected)
+2025-04-09 20:54:41,117 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 32
+2025-04-09 20:54:41,118 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 32
+2025-04-09 20:54:41,118 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2025-04-09 20:54:41,119 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2025-04-09 20:54:41,119 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2025-04-09 20:54:41,119 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2025-04-09 20:54:41,120 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2025-04-09 20:54:41,120 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2025-04-09 20:54:41,120 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2025-04-09 20:54:41,120 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2025-04-09 20:54:41,120 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2025-04-09 20:54:41,122 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2025-04-09 20:54:41,123 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.disableCacheFinalizersForFastThreadLocalThreads: false
+2025-04-09 20:54:41,133 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2025-04-09 20:54:41,133 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2025-04-09 20:54:41,134 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2025-04-09 20:54:41,149 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3] Created a new pooled channel, now: 0 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 20:54:41,171 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkAccessible: true
+2025-04-09 20:54:41,171 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkBounds: true
+2025-04-09 20:54:41,172 DEBUG i.n.u.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [reactor-http-nio-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@780d9882
+2025-04-09 20:54:41,180 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-04-09 20:54:41,181 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] resolveCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:54:41,181 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] cnameCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:54:41,181 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] authoritativeDnsServerCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 20:54:41,192 DEBUG i.n.b.ChannelInitializerExtensions [reactor-http-nio-2] -Dio.netty.bootstrap.extensions: null
+2025-04-09 20:54:41,212 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3] Connecting to [localhost/127.0.0.1:8089].
+2025-04-09 20:54:41,219 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Registering pool release on close event for channel
+2025-04-09 20:54:41,220 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Channel connected, now: 1 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 20:54:41,221 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] onStateChange(PooledConnection{channel=[id: 0x7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089]}, [connected])
+2025-04-09 20:54:41,234 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089]}}, [configured])
+2025-04-09 20:54:41,236 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Handler is being applied: {uri=http://localhost:8089/tours/1/ratings, method=GET}
+2025-04-09 20:54:41,237 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089]}}, [request_prepared])
+2025-04-09 20:54:41,244 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] No sendHeaders() called before complete, sending zero-length header
+2025-04-09 20:54:41,252 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2025-04-09 20:54:41,252 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.ratio: 8
+2025-04-09 20:54:41,252 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.chunkSize: 32
+2025-04-09 20:54:41,253 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.blocking: false
+2025-04-09 20:54:41,253 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2025-04-09 20:54:41,267 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089]}}, [request_sent])
+2025-04-09 20:54:41,277 DEBUG i.n.h.c.c.Zstd [reactor-http-nio-2] zstd-jni not in the classpath; Zstd support will be unavailable.
+2025-04-09 20:54:41,282 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Content-Type: <filtered>
+Transfer-Encoding: <filtered>
+Date: <filtered>
+2025-04-09 20:54:41,282 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089]}}, [response_received])
+2025-04-09 20:54:41,293 DEBUG o.s.c.l.LogFormatUtils [reactor-http-nio-2] [847f3e7] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Response 200 OK
+2025-04-09 20:54:41,300 DEBUG c.e.w.WebClientTest [reactor-http-nio-2] Response: 
+Status: 200 OK
+Headers:
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Date: Wed, 09 Apr 2025 18:54:41 GMT
+
+2025-04-09 20:54:41,301 DEBUG c.e.w.WebClientTest [reactor-http-nio-2] Response: 
+Status: 200 OK
+Headers:
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Date: Wed, 09 Apr 2025 18:54:41 GMT
+
+2025-04-09 20:54:41,330 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] [terminated=false, cancelled=false, pending=0, error=null]: subscribing inbound receiver
+2025-04-09 20:54:41,337 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Received last HTTP packet
+2025-04-09 20:54:41,376 DEBUG o.s.c.l.CompositeLog [reactor-http-nio-2] [847f3e7] [7fb91bb3-1, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Decoded [{"content":[],"pageable":{"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"pageSize" (truncated)...]
+2025-04-09 20:54:41,376 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089]}}, [response_completed])
+2025-04-09 20:54:41,377 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089]}}, [disconnecting])
+2025-04-09 20:54:41,377 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Releasing channel
+2025-04-09 20:54:41,380 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [7fb91bb3, L:/127.0.0.1:53985 - R:localhost/127.0.0.1:8089] Channel cleaned, now: 0 active connections, 1 inactive connections 0 pending acquire requests.
+2025-04-09 21:00:11,256 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using SLF4J as the default logging framework
+2025-04-09 21:00:11,262 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2025-04-09 21:00:11,262 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 21
+2025-04-09 21:00:11,265 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2025-04-09 21:00:11,266 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe base methods: all available
+2025-04-09 21:00:11,267 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2025-04-09 21:00:11,269 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2025-04-09 21:00:11,270 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2025-04-09 21:00:11,271 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2025-04-09 21:00:11,272 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4460c2fd
+2025-04-09 21:00:11,273 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2025-04-09 21:00:11,274 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2025-04-09 21:00:11,275 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\RENDSZ~1\AppData\Local\Temp (java.io.tmpdir)
+2025-04-09 21:00:11,275 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2025-04-09 21:00:11,276 DEBUG i.n.u.i.PlatformDependent [main] Platform: Windows
+2025-04-09 21:00:11,278 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2025-04-09 21:00:11,279 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2025-04-09 21:00:11,280 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2025-04-09 21:00:11,281 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2025-04-09 21:00:11,296 DEBUG r.u.Loggers$Slf4JLogger [main] Using Slf4j logging framework
+2025-04-09 21:00:11,330 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2025-04-09 21:00:11,331 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2025-04-09 21:00:11,358 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2025-04-09 21:00:11,358 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2025-04-09 21:00:11,373 DEBUG i.n.h.c.c.Brotli [main] brotli4j not in the classpath; Brotli support will be unavailable.
+2025-04-09 21:00:11,764 DEBUG c.e.w.WebClientTest [main] Response: 
+Headers:
+
+2025-04-09 21:00:11,775 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv4Stack: false
+2025-04-09 21:00:11,775 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv6Addresses: false
+2025-04-09 21:00:11,779 DEBUG i.n.u.NetUtilInitializations [main] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+2025-04-09 21:00:11,780 DEBUG i.n.u.NetUtil$SoMaxConnAction [main] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2025-04-09 21:00:11,793 DEBUG o.s.c.l.LogFormatUtils [main] [69cac930] HTTP GET http://localhost:8089/tours/1/ratings
+2025-04-09 21:00:11,803 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=16, workerCount=16}
+2025-04-09 21:00:11,804 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default ConnectionProvider: reactor.netty.resources.DefaultPooledConnectionProvider@79ab34c1
+2025-04-09 21:00:11,805 DEBUG r.u.Loggers$Slf4JLogger [main] Default io_uring support : false
+2025-04-09 21:00:11,890 DEBUG r.u.Loggers$Slf4JLogger [main] Default Epoll support : false
+2025-04-09 21:00:11,892 DEBUG r.u.Loggers$Slf4JLogger [main] Default KQueue support : false
+2025-04-09 21:00:11,896 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 32
+2025-04-09 21:00:11,906 DEBUG i.n.u.c.GlobalEventExecutor [main] -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2025-04-09 21:00:11,917 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2025-04-09 21:00:11,917 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2025-04-09 21:00:11,924 DEBUG i.n.u.i.PlatformDependent$Mpsc [main] org.jctools-core.MpscChunkedArrayQueue: available
+2025-04-09 21:00:11,963 DEBUG i.n.r.d.DnsNameResolver [main] Default ResolvedAddressTypes: IPV4_PREFERRED
+2025-04-09 21:00:11,963 DEBUG i.n.r.d.DnsNameResolver [main] Localhost address: localhost/127.0.0.1
+2025-04-09 21:00:11,972 DEBUG i.n.r.d.DnsNameResolver [main] Windows hostname: CHWS560922458
+2025-04-09 21:00:11,973 DEBUG i.n.r.d.DnsNameResolver [main] Default search domains: []
+2025-04-09 21:00:11,975 DEBUG i.n.r.d.DnsNameResolver [main] Default UnixResolverOptions{ndots=1, timeout=5, attempts=16}
+2025-04-09 21:00:11,983 DEBUG i.n.r.DefaultHostsFileEntriesResolver [main] -Dio.netty.hostsFileRefreshInterval: 0
+2025-04-09 21:00:12,009 DEBUG i.n.r.d.DefaultDnsServerAddressStreamProvider [main] Default DNS servers: [/[2a02:ab88:378f:5d00:be5b:d5ff:febd:8494]:53, /192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2025-04-09 21:00:12,021 DEBUG r.u.Loggers$Slf4JLogger [main] Creating a new [http] client pool [PoolFactory{evictionInterval=PT0S, leasingStrategy=fifo, maxConnections=500, maxIdleTime=-1, maxLifeTime=-1, metricsEnabled=false, pendingAcquireMaxCount=1000, pendingAcquireTimeout=45000}] for [localhost/<unresolved>:8089]
+2025-04-09 21:00:12,055 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.processId: 5308 (auto-detected)
+2025-04-09 21:00:12,058 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.machineId: 88:ae:dd:ff:fe:1a:25:7a (auto-detected)
+2025-04-09 21:00:12,083 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 32
+2025-04-09 21:00:12,083 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 32
+2025-04-09 21:00:12,083 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2025-04-09 21:00:12,084 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2025-04-09 21:00:12,084 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2025-04-09 21:00:12,085 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2025-04-09 21:00:12,085 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2025-04-09 21:00:12,085 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2025-04-09 21:00:12,085 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2025-04-09 21:00:12,085 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2025-04-09 21:00:12,086 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2025-04-09 21:00:12,086 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2025-04-09 21:00:12,086 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.disableCacheFinalizersForFastThreadLocalThreads: false
+2025-04-09 21:00:12,094 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2025-04-09 21:00:12,094 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2025-04-09 21:00:12,094 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2025-04-09 21:00:12,107 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5] Created a new pooled channel, now: 0 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 21:00:12,125 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkAccessible: true
+2025-04-09 21:00:12,125 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkBounds: true
+2025-04-09 21:00:12,126 DEBUG i.n.u.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [reactor-http-nio-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3094833b
+2025-04-09 21:00:12,133 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-04-09 21:00:12,134 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] resolveCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 21:00:12,134 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] cnameCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 21:00:12,135 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] authoritativeDnsServerCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 21:00:12,146 DEBUG i.n.b.ChannelInitializerExtensions [reactor-http-nio-2] -Dio.netty.bootstrap.extensions: null
+2025-04-09 21:00:12,165 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5] Connecting to [localhost/127.0.0.1:8089].
+2025-04-09 21:00:12,172 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Registering pool release on close event for channel
+2025-04-09 21:00:12,174 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Channel connected, now: 1 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 21:00:12,174 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] onStateChange(PooledConnection{channel=[id: 0x4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089]}, [connected])
+2025-04-09 21:00:12,186 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089]}}, [configured])
+2025-04-09 21:00:12,188 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Handler is being applied: {uri=http://localhost:8089/tours/1/ratings, method=GET}
+2025-04-09 21:00:12,190 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089]}}, [request_prepared])
+2025-04-09 21:00:12,194 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] No sendHeaders() called before complete, sending zero-length header
+2025-04-09 21:00:12,202 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2025-04-09 21:00:12,203 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.ratio: 8
+2025-04-09 21:00:12,203 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.chunkSize: 32
+2025-04-09 21:00:12,203 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.blocking: false
+2025-04-09 21:00:12,204 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2025-04-09 21:00:12,216 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089]}}, [request_sent])
+2025-04-09 21:00:12,228 DEBUG i.n.h.c.c.Zstd [reactor-http-nio-2] zstd-jni not in the classpath; Zstd support will be unavailable.
+2025-04-09 21:00:12,233 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Content-Type: <filtered>
+Transfer-Encoding: <filtered>
+Date: <filtered>
+2025-04-09 21:00:12,233 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089]}}, [response_received])
+2025-04-09 21:00:12,245 DEBUG o.s.c.l.LogFormatUtils [reactor-http-nio-2] [69cac930] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Response 200 OK
+2025-04-09 21:00:12,256 DEBUG c.e.w.WebClientTest [reactor-http-nio-2] Response: 
+Status: 200 OK
+Headers:
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Date: Wed, 09 Apr 2025 19:00:12 GMT
+200 OK
+2025-04-09 21:00:12,280 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] [terminated=false, cancelled=false, pending=0, error=null]: subscribing inbound receiver
+2025-04-09 21:00:12,287 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Received last HTTP packet
+2025-04-09 21:00:12,320 DEBUG o.s.c.l.CompositeLog [reactor-http-nio-2] [69cac930] [4ad38cb5-1, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Decoded [{"content":[],"pageable":{"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"pageSize" (truncated)...]
+2025-04-09 21:00:12,320 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089]}}, [response_completed])
+2025-04-09 21:00:12,320 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089]}}, [disconnecting])
+2025-04-09 21:00:12,321 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Releasing channel
+2025-04-09 21:00:12,323 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [4ad38cb5, L:/127.0.0.1:54018 - R:localhost/127.0.0.1:8089] Channel cleaned, now: 0 active connections, 1 inactive connections 0 pending acquire requests.
+2025-04-09 21:10:14,597 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using SLF4J as the default logging framework
+2025-04-09 21:10:14,606 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2025-04-09 21:10:14,608 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 21
+2025-04-09 21:10:14,611 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2025-04-09 21:10:14,612 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe base methods: all available
+2025-04-09 21:10:14,613 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2025-04-09 21:10:14,614 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2025-04-09 21:10:14,616 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2025-04-09 21:10:14,617 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2025-04-09 21:10:14,619 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4460c2fd
+2025-04-09 21:10:14,621 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2025-04-09 21:10:14,622 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2025-04-09 21:10:14,624 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\RENDSZ~1\AppData\Local\Temp (java.io.tmpdir)
+2025-04-09 21:10:14,625 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2025-04-09 21:10:14,626 DEBUG i.n.u.i.PlatformDependent [main] Platform: Windows
+2025-04-09 21:10:14,629 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2025-04-09 21:10:14,630 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2025-04-09 21:10:14,632 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2025-04-09 21:10:14,632 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2025-04-09 21:10:14,646 DEBUG r.u.Loggers$Slf4JLogger [main] Using Slf4j logging framework
+2025-04-09 21:10:14,682 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2025-04-09 21:10:14,682 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2025-04-09 21:10:14,714 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2025-04-09 21:10:14,714 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2025-04-09 21:10:14,730 DEBUG i.n.h.c.c.Brotli [main] brotli4j not in the classpath; Brotli support will be unavailable.
+2025-04-09 21:10:15,096 DEBUG c.e.w.WebClientTest [main] Response: 
+Headers:
+
+2025-04-09 21:10:15,107 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv4Stack: false
+2025-04-09 21:10:15,108 DEBUG i.n.u.NetUtil [main] -Djava.net.preferIPv6Addresses: false
+2025-04-09 21:10:15,111 DEBUG i.n.u.NetUtilInitializations [main] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+2025-04-09 21:10:15,112 DEBUG i.n.u.NetUtil$SoMaxConnAction [main] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2025-04-09 21:10:15,127 DEBUG o.s.c.l.LogFormatUtils [main] [69cac930] HTTP GET http://localhost:8089/tours/1/ratings
+2025-04-09 21:10:15,137 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=16, workerCount=16}
+2025-04-09 21:10:15,138 DEBUG r.u.Loggers$Slf4JLogger [main] [http] resources will use the default ConnectionProvider: reactor.netty.resources.DefaultPooledConnectionProvider@79ab34c1
+2025-04-09 21:10:15,139 DEBUG r.u.Loggers$Slf4JLogger [main] Default io_uring support : false
+2025-04-09 21:10:15,217 DEBUG r.u.Loggers$Slf4JLogger [main] Default Epoll support : false
+2025-04-09 21:10:15,218 DEBUG r.u.Loggers$Slf4JLogger [main] Default KQueue support : false
+2025-04-09 21:10:15,222 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 32
+2025-04-09 21:10:15,230 DEBUG i.n.u.c.GlobalEventExecutor [main] -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2025-04-09 21:10:15,239 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2025-04-09 21:10:15,239 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2025-04-09 21:10:15,245 DEBUG i.n.u.i.PlatformDependent$Mpsc [main] org.jctools-core.MpscChunkedArrayQueue: available
+2025-04-09 21:10:15,283 DEBUG i.n.r.d.DnsNameResolver [main] Default ResolvedAddressTypes: IPV4_PREFERRED
+2025-04-09 21:10:15,283 DEBUG i.n.r.d.DnsNameResolver [main] Localhost address: localhost/127.0.0.1
+2025-04-09 21:10:15,291 DEBUG i.n.r.d.DnsNameResolver [main] Windows hostname: CHWS560922458
+2025-04-09 21:10:15,291 DEBUG i.n.r.d.DnsNameResolver [main] Default search domains: []
+2025-04-09 21:10:15,293 DEBUG i.n.r.d.DnsNameResolver [main] Default UnixResolverOptions{ndots=1, timeout=5, attempts=16}
+2025-04-09 21:10:15,300 DEBUG i.n.r.DefaultHostsFileEntriesResolver [main] -Dio.netty.hostsFileRefreshInterval: 0
+2025-04-09 21:10:15,330 DEBUG i.n.r.d.DefaultDnsServerAddressStreamProvider [main] Default DNS servers: [/[2a02:ab88:378f:5d00:be5b:d5ff:febd:8494]:53, /192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2025-04-09 21:10:15,343 DEBUG r.u.Loggers$Slf4JLogger [main] Creating a new [http] client pool [PoolFactory{evictionInterval=PT0S, leasingStrategy=fifo, maxConnections=500, maxIdleTime=-1, maxLifeTime=-1, metricsEnabled=false, pendingAcquireMaxCount=1000, pendingAcquireTimeout=45000}] for [localhost/<unresolved>:8089]
+2025-04-09 21:10:15,384 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.processId: 14652 (auto-detected)
+2025-04-09 21:10:15,386 DEBUG i.n.c.DefaultChannelId [main] -Dio.netty.machineId: 88:ae:dd:ff:fe:1a:25:7a (auto-detected)
+2025-04-09 21:10:15,417 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 32
+2025-04-09 21:10:15,418 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 32
+2025-04-09 21:10:15,418 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2025-04-09 21:10:15,419 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2025-04-09 21:10:15,419 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2025-04-09 21:10:15,419 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2025-04-09 21:10:15,419 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2025-04-09 21:10:15,419 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2025-04-09 21:10:15,419 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2025-04-09 21:10:15,419 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2025-04-09 21:10:15,419 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2025-04-09 21:10:15,420 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2025-04-09 21:10:15,420 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.disableCacheFinalizersForFastThreadLocalThreads: false
+2025-04-09 21:10:15,429 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2025-04-09 21:10:15,429 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2025-04-09 21:10:15,429 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2025-04-09 21:10:15,447 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838] Created a new pooled channel, now: 0 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 21:10:15,465 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkAccessible: true
+2025-04-09 21:10:15,466 DEBUG i.n.b.AbstractByteBuf [reactor-http-nio-2] -Dio.netty.buffer.checkBounds: true
+2025-04-09 21:10:15,467 DEBUG i.n.u.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory [reactor-http-nio-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@42f66b3
+2025-04-09 21:10:15,474 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-04-09 21:10:15,475 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] resolveCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 21:10:15,475 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] cnameCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 21:10:15,475 DEBUG i.n.r.d.DnsNameResolverBuilder [reactor-http-nio-2] authoritativeDnsServerCache and TTLs are mutually exclusive. TTLs are ignored.
+2025-04-09 21:10:15,487 DEBUG i.n.b.ChannelInitializerExtensions [reactor-http-nio-2] -Dio.netty.bootstrap.extensions: null
+2025-04-09 21:10:15,507 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838] Connecting to [localhost/127.0.0.1:8089].
+2025-04-09 21:10:15,517 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Registering pool release on close event for channel
+2025-04-09 21:10:15,518 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Channel connected, now: 1 active connections, 0 inactive connections 0 pending acquire requests.
+2025-04-09 21:10:15,519 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] onStateChange(PooledConnection{channel=[id: 0x6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089]}, [connected])
+2025-04-09 21:10:15,535 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089]}}, [configured])
+2025-04-09 21:10:15,538 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Handler is being applied: {uri=http://localhost:8089/tours/1/ratings, method=GET}
+2025-04-09 21:10:15,540 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089]}}, [request_prepared])
+2025-04-09 21:10:15,546 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] No sendHeaders() called before complete, sending zero-length header
+2025-04-09 21:10:15,555 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2025-04-09 21:10:15,556 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.ratio: 8
+2025-04-09 21:10:15,557 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.chunkSize: 32
+2025-04-09 21:10:15,557 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.blocking: false
+2025-04-09 21:10:15,557 DEBUG i.n.u.Recycler [reactor-http-nio-2] -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2025-04-09 21:10:15,570 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089]}}, [request_sent])
+2025-04-09 21:10:15,585 DEBUG i.n.h.c.c.Zstd [reactor-http-nio-2] zstd-jni not in the classpath; Zstd support will be unavailable.
+2025-04-09 21:10:15,591 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Content-Type: <filtered>
+Transfer-Encoding: <filtered>
+Date: <filtered>
+2025-04-09 21:10:15,592 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089]}}, [response_received])
+2025-04-09 21:10:15,605 DEBUG o.s.c.l.LogFormatUtils [reactor-http-nio-2] [69cac930] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Response 200 OK
+2025-04-09 21:10:15,611 DEBUG c.e.w.WebClientTest [reactor-http-nio-2] Response: 
+Status: 200 OK
+Headers:
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Date: Wed, 09 Apr 2025 19:10:15 GMT
+200 OK
+2025-04-09 21:10:15,676 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] [terminated=false, cancelled=false, pending=0, error=null]: subscribing inbound receiver
+2025-04-09 21:10:15,680 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Received last HTTP packet
+2025-04-09 21:10:15,698 DEBUG o.s.c.l.CompositeLog [reactor-http-nio-2] [69cac930] [6ea2f838-1, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Decoded [TourRating{id='null', tourId='null', customerId=null, score=null, comment='null'}]
+2025-04-09 21:10:15,699 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089]}}, [response_completed])
+2025-04-09 21:10:15,699 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] onStateChange(GET{uri=/tours/1/ratings, connection=PooledConnection{channel=[id: 0x6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089]}}, [disconnecting])
+2025-04-09 21:10:15,699 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Releasing channel
+2025-04-09 21:10:15,701 DEBUG r.u.Loggers$Slf4JLogger [reactor-http-nio-2] [6ea2f838, L:/127.0.0.1:54083 - R:localhost/127.0.0.1:8089] Channel cleaned, now: 0 active connections, 1 inactive connections 0 pending acquire requests.
